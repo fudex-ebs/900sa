@@ -1,0 +1,99 @@
+html,
+body
+{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+body
+{
+	background-color: #5BC5FF;
+	-webkit-text-size-adjust: none;
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	position: relative;
+}
+h1
+{
+	text-shadow: 0 1px 5px rgba( 0, 0, 0, 0.2 );
+	text-transform: lowercase;
+	font-family: 'Pacifico', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 150px;
+	line-height: 150px;
+	letter-spacing: -10px;
+	margin: 0 0 20px 0;
+}
+a,
+a:hover
+{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.phone
+{
+    background: center center no-repeat transparent;
+    background-image: url(../images/tablet-example.png);
+    height: 760px;
+    width: 830px;
+    margin-top: -380px;
+    margin-left: -650px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+.phone iframe {
+    background: none repeat scroll 0 0 #111;
+    border: medium none;
+    border-radius: 5px;
+    height: 500px;
+    margin: 132px 0 0 76px;
+    overflow: hidden;
+    width: 675px;
+}
+#page
+{
+	width: 350px;
+	position: fixed;
+	margin-top: -230px;
+	margin-left: 0;
+	top: 50%;
+	left: 65%;
+}
+
+
+
+.phone2
+{
+    background: center center no-repeat transparent;
+    background-image: url(../images/phone-example.png);
+    height: 760px;
+    width: 439px;
+    margin-top: -380px;
+    margin-left: -650px;
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    background-size: 600px 750px;
+}
+.phone2 iframe {
+    background: none repeat scroll 0 0 #111;
+    border: medium none;
+    border-radius: 5px;
+    height: 492px;
+    margin: 136px 0 0 28px;
+    overflow: hidden;
+    width: 400px;
+}
+#page2
+{
+	width: 350px;
+	position: fixed;
+	margin-top: -230px;
+	margin-left: 0;
+	top: 50%;
+	left: 65%;
+}

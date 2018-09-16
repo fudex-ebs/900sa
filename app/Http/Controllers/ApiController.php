@@ -453,7 +453,7 @@ class ApiController extends Controller{
            if($update){
                $arr['delete'] = 'success';
            }else{
-               $arr['delete'] = 'error';
+               // $arr['delete'] = 'error';
            }
         }else{
                $arr['delete'] = 'error';
@@ -464,7 +464,7 @@ class ApiController extends Controller{
              'Access-Control-Allow-Methods'=> 'POST, GET, OPTIONS, PUT, DELETE',
              'Access-Control-Allow-Headers'=> 'Content-Type, X-Auth-Token, Origin'
         ];
-        return response()->json($arr,$status=200, $headers, $options=JSON_PRETTY_PRINT);
+        return response()->json($_request,$status=200, $headers, $options=JSON_PRETTY_PRINT);
     }
     
     

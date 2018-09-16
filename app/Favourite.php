@@ -2,9 +2,8 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 
-class Favourite extends Model
+class Favourite extends BaseModel
 {
-    protected $fillable = ['item_id','user_id'];
+    protected $fillable = ['item_id','user_id','item_type'];
 }

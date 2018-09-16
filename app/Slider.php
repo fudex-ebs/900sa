@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 
-class Slider extends Model
+class Slider extends BaseModel
 {
+	// canceld
     protected $fillable = ['img','sort','active','created_by'];
 }

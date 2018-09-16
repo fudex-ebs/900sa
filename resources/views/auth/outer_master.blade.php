@@ -10,14 +10,14 @@
     <title>{{ $title }} | 900SA </title>
     <link rel="shortcut icon" href="{{asset('admin_asset/img/logo.png')}}"> 
     <!-- Bootstrap core CSS -->
-    <link href="{{ asset('admin_asset/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('admin_asset/css/bootstrap.css') }}" rel="stylesheet">
     <!--external css-->
-    <link href="{{ asset('admin_asset/font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
+    <link href="{{ URL::asset('admin_asset/font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
         
     <!-- Custom styles for this template -->
-    <link href="{{ asset('admin_asset/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin_asset/css/style-responsive.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin_asset/css/dev.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('admin_asset/css/style.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('admin_asset/css/style-responsive.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('admin_asset/css/dev.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,14 +30,14 @@
       @yield('content')
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="{{ asset('admin_asset/js/jquery.js') }}"></script>
-    <script src="{{ asset('admin_asset/js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('admin_asset/js/jquery.js') }}"></script>
+    <script src="{{ URL::asset('admin_asset/js/bootstrap.min.js') }}"></script>
 
     <!--BACKSTRETCH-->
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
-    <script type="text/javascript" src="{{ asset('admin_asset/js/jquery.backstretch.min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('admin_asset/js/jquery.backstretch.min.js') }}"></script>
     <script>
-        $.backstretch("{{ asset('admin_asset/img/login-bg.jpg') }}", {speed: 500});
+        $.backstretch("{{ URL::asset('admin_asset/img/login-bg.jpg') }}", {speed: 500});
     </script>
 
 

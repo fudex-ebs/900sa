@@ -14,9 +14,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'password','mobile','active','role','address','lat','lng','region'
-    ];
+    protected $fillable = ['name', 'email', 'password','mobile','active','address','lat','lng','region','UserRole_id'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -29,5 +27,18 @@ class User extends Authenticatable
     
     public function getTableColumns() {
         return $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());
+    }
+
+    public function company()
+    {
+        return $this->hasOne('App\Company');
+    }
+    public function user_role()
+    {
+        return $this->belongsTo('App\UserRole');
+    }
+    public function tender()
+    {
+        return $this->hasMany('App\Tender');
     }
 }

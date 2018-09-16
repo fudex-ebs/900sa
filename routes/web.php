@@ -103,6 +103,7 @@ Auth::routes();
     Route::get('api/insert_token','ApiController@insert_token');
 
     Route::get('api/join/{table}','ApiController@join');
+    
     Route::get('api/{table}','ApiController@select');
 
     Route::post('api/insert/{table}','ApiController@insert');
@@ -126,3 +127,6 @@ Auth::routes();
 // });
  
  //Route::post('api/insert/{table}','ApiController@insert',['middleware' => 'cors']);
+
+
+    Route::get('test','HomeController@index@test'); 

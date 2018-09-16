@@ -2,9 +2,17 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 
-class Offer extends Model
+class Offer extends BaseModel
 {
-    protected $fillable = ['title','img','category','description','created_by','views','expire_date','active','file','link'];
+    protected $fillable = ['title','img','category_id','description','company_id','views','expire_date','active','file','link'];
+
+    public function category()
+    {
+        return $this->belongsTo('App\Category');
+    }
+    public function company()
+    {
+        return $this->belongsTo('App\Company');
+    }
 }

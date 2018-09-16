@@ -2,9 +2,8 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 
-class Social_links extends Model
+class Social_links extends BaseModel
 {
     protected  $fillable = ['title','value','sort','active'];
 }

@@ -5,5 +5,5 @@ namespace App;
 
 class Contact extends BaseModel
 {
-    protected $fillable = ['name','email','mobile','body','read'];
+    protected $fillable = ['name','email','mobile_number','body','read'];
 }

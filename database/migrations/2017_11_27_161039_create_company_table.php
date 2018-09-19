@@ -15,16 +15,23 @@ class CreateCompanyTable extends Migration
     {
         Schema::create('company', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('logo');
-            $table->string('category');
+            $table->integer('user_id');
+            $table->integer('category_id');
+            $table->string('company_code');
             $table->text('about');
             $table->string('commercial_registration_no');
             $table->date('commercial_registration_expire_date');
             $table->string('commercial_registration_img');
             $table->integer('points');
-            $table->integer('company_type');
             $table->string('qr_code');
-            $table->integer('rate');
+            $table->string('word_hours');
+            $table->string('instagram');
+            $table->string('facebook');
+            $table->string('twitter');
+            $table->string('twitter');
+            $table->string('snapshat');
+            $table->string('website');
+            $table->boolean('special');
             $table->timestamps();
         });
     }

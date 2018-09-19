@@ -5,13 +5,17 @@ namespace App;
 class Categories extends BaseModel
 {
 	public $timestamps = true;
-	protected $fillable = ['parent','name','active','sort','color','code'];
+	protected $fillable = ['name','active'];
     
-    public function company()
+    public function companies()
     {
         return $this->hasMany('App\Company');
     }
-    public function offer()
+    public function offers()
+    {
+        return $this->hasMany('App\Offer');
+    }
+    public function tenders()
     {
         return $this->hasMany('App\Offer');
     }

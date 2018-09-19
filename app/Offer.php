@@ -5,7 +5,7 @@ namespace App;
 
 class Offer extends BaseModel
 {
-    protected $fillable = ['title','img','category_id','description','company_id','views','expire_date','active','file','link'];
+    protected $fillable = ['title','img','category_id','description','company_id','views','active'];
 
     public function category()
     {

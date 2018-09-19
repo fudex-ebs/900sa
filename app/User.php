@@ -14,7 +14,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'password','mobile','active','address','lat','lng','region','UserRole_id'];
+    protected $fillable = ['name', 'email', 'password','mobile_number','image','lat','lng','city','country','role','active'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -41,4 +41,6 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Tender');
     }
+   
+
 }
